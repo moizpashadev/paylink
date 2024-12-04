@@ -10,6 +10,8 @@ import Textbox from './components/textbox';
 import InfoArea from './components/InfoArea';
 import SearchIcon from './svgs/cardinfo/search.svg';
 import CryptoJS from 'crypto-js';
+import './globals.css';
+
 
 const PaymentLink = () => {
   const [expanded, setExpanded] = useState(null); 
