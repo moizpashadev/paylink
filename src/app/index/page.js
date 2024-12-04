@@ -114,7 +114,7 @@ const PaymentMethods = () => {
             setApiResponse(response.data);
             console.log('API Response:', response.data.voucherData.due_Date);
         } catch (error) {
-            console.error('Error fetching API data:', error);
+            console.error('Error fetching API ----data:', error);
         }
     };
 
