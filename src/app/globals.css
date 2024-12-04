@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+@apply px-4 py-2 w-full bg-btnBlue rounded-[5px] active:shadow-custom-shadow  text-white;
+}
+
+
+:root {
+  --background: #F6F9FB;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #F6F9FB;
+    --foreground: #363636;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:100 ;
+  font-style: normal;
+  
+}
+
+
+.heading {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 500;
+  color: #287DCE;
+}
+
+
+
+.content {
+  font-family: 'Outfit', sans-serif;
+  color: #505050;
+  font-weight: 200;
+}
+.content-white {
+  font-family: 'Outfit', sans-serif;
+  color: #fefefe;
+  font-weight: 200;
+  
+}
+.InvSumContent {
+  font-family: 'Outfit', sans-serif;
+  color: #505050;
+  font-weight: 100;
+  font-size: small;
+}
+
+
+/* styles.css or global.css */
+.responsive-logo {
+  width: 120px; /* Default for mobile */
+  height: 30px;
+}
+
+
+@media (min-width: 640px) { /* Small screens */
+  .responsive-logo {
+    width: 120px;
+    height: 30px;
+  }
+}
+
+@media (min-width: 768px) { /* Medium screens */
+  .responsive-logo {
+    width: 160px;
+    height: 40px;
+  }
+}
+
+@media (min-width: 1024px) { /* Large screens */
+  .responsive-logo {
+    width: 160px;
+    height: 40px;
+  }
+}
